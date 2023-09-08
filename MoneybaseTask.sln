@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{01C53340-42D3-4CE2-835A-D611AEF587F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{2D9B4F92-942B-4770-A022-0A333D4BCD70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneybaseTask.Business.Entities", "MoneybaseTask.Business.Entities\MoneybaseTask.Business.Entities.csproj", "{316FEDB5-906A-422F-959E-5D415C71758C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EE84ABCB-5266-424B-9266-011A3EBEBDDE} = {EE84ABCB-5266-424B-9266-011A3EBEBDDE}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneybaseTask.Business.Services", "MoneybaseTask.Business.Services\MoneybaseTask.Business.Services.csproj", "{59A3C283-07FB-4550-A462-97FB1383E623}"
+	ProjectSection(ProjectDependencies) = postProject
+		{316FEDB5-906A-422F-959E-5D415C71758C} = {316FEDB5-906A-422F-959E-5D415C71758C}
+		{EE84ABCB-5266-424B-9266-011A3EBEBDDE} = {EE84ABCB-5266-424B-9266-011A3EBEBDDE}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneybaseTask.Common.Core", "MoneybaseTask.Common.Core\MoneybaseTask.Common.Core.csproj", "{EE84ABCB-5266-424B-9266-011A3EBEBDDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosting", "Hosting", "{CF579B2D-8420-42BA-9E84-1ED56FD1658D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoneybaseTask.Hosting.WebApi", "MoneybaseTask.Hosting.WebApi\MoneybaseTask.Hosting.WebApi.csproj", "{B0CC2240-CB21-4281-965D-4527B8225C55}"
+	ProjectSection(ProjectDependencies) = postProject
+		{316FEDB5-906A-422F-959E-5D415C71758C} = {316FEDB5-906A-422F-959E-5D415C71758C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{316FEDB5-906A-422F-959E-5D415C71758C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{316FEDB5-906A-422F-959E-5D415C71758C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{316FEDB5-906A-422F-959E-5D415C71758C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{316FEDB5-906A-422F-959E-5D415C71758C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59A3C283-07FB-4550-A462-97FB1383E623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A3C283-07FB-4550-A462-97FB1383E623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A3C283-07FB-4550-A462-97FB1383E623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A3C283-07FB-4550-A462-97FB1383E623}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE84ABCB-5266-424B-9266-011A3EBEBDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE84ABCB-5266-424B-9266-011A3EBEBDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE84ABCB-5266-424B-9266-011A3EBEBDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE84ABCB-5266-424B-9266-011A3EBEBDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0CC2240-CB21-4281-965D-4527B8225C55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0CC2240-CB21-4281-965D-4527B8225C55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0CC2240-CB21-4281-965D-4527B8225C55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0CC2240-CB21-4281-965D-4527B8225C55}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{316FEDB5-906A-422F-959E-5D415C71758C} = {01C53340-42D3-4CE2-835A-D611AEF587F3}
+		{59A3C283-07FB-4550-A462-97FB1383E623} = {01C53340-42D3-4CE2-835A-D611AEF587F3}
+		{EE84ABCB-5266-424B-9266-011A3EBEBDDE} = {2D9B4F92-942B-4770-A022-0A333D4BCD70}
+		{B0CC2240-CB21-4281-965D-4527B8225C55} = {CF579B2D-8420-42BA-9E84-1ED56FD1658D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49B9403B-A4EA-46B5-BE42-CC78860B562D}
+	EndGlobalSection
+EndGlobal
