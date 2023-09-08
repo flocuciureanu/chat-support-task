@@ -77,7 +77,7 @@ public class ChatSessionController : MoneybaseController
     /// <response code="422">Validation error</response>
     /// <response code="500">Internal server error</response>
     [HttpPatch]
-    [Route(ApiRoutes.ChatSession.UpdateStatusAsCompleted)]
+    [Route(ApiRoutes.ChatSession.MarkAsCompleted)]
     public async Task<IActionResult> UpdateStatusAsCompletedAsync([FromRoute] string id, [FromBody] string notes)
     {
         var commandResult = await _mediator.Send(new MarkChatSessionAsCompletedCommand()
@@ -93,7 +93,7 @@ public class ChatSessionController : MoneybaseController
     }
     
     /// <summary>
-    /// Gets chat sessions details by status
+    /// Gets chat sessions details by status: 10 - Pending, 20 - In Progress, 30 - Completed, 40 - Closed, 50 - Refused
     /// </summary>
     /// <response code="400">Bad request</response>
     /// <response code="422">Validation error</response>
