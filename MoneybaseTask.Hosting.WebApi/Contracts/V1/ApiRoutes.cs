@@ -24,8 +24,8 @@ internal static class ApiRoutes
         
         public const string Create = ChatSessionBase;
         public const string Poll = $"{ChatSessionBase}/{{id}}/poll";
-        public const string UpdateStatusAsCompleted = $"{ChatSessionBase}/{{id}}/completed";
+        public const string MarkAsCompleted = $"{ChatSessionBase}/{{id}}/status/completed";
         public const string GetByStatus = $"{ChatSessionBase}/status";
-        public const string MarkAsClosed = $"{ChatSessionBase}/mark-as-closed";
+        public const string MarkAsClosed = $"{ChatSessionBase}/status/mark-as-closed";
     }
 }
